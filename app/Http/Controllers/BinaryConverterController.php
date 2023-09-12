@@ -11,7 +11,9 @@ class BinaryConverterController extends Controller
     public function index()
     {
 
-        return view('index');
+        $decimalNumber = session('decimalNumber');
+       
+            return view('index', compact('decimalNumber'));
 
     }
 
@@ -27,6 +29,6 @@ class BinaryConverterController extends Controller
 
         $decimalNumber = bindec($binaryNumber);
 
-        return view('index', compact('decimalNumber'));
+        return redirect('/')->with('decimalNumber', $decimalNumber);
     }
 }
