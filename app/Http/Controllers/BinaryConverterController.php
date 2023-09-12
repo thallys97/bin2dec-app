@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 
 class BinaryConverterController extends Controller
 {
+
+    public function index()
+    {
+
+        return view('');
+
+    }
+
+
     public function convert(Request $request)
     {
         $binaryNumber = $request->input('binary_number');
