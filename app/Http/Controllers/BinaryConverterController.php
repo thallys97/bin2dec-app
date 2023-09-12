@@ -11,7 +11,7 @@ class BinaryConverterController extends Controller
     public function index()
     {
 
-        return view('');
+        return view('index');
 
     }
 
@@ -27,6 +27,6 @@ class BinaryConverterController extends Controller
 
         $decimalNumber = bindec($binaryNumber);
 
-        return view('converter', compact('decimalNumber'));
+        return view('index', compact('decimalNumber'));
     }
 }
