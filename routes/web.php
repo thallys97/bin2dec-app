@@ -19,5 +19,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('/converter', [BinaryConverterController::class, 'index']);
-Route::post('/converter', [BinaryConverterController::class, 'convert']);
+Route::get('/', [BinaryConverterController::class, 'index']);
+Route::post('/convert', [BinaryConverterController::class, 'convert']);
